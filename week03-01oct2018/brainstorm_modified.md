@@ -1,44 +1,3 @@
-
-# Part 1 - Brainstorm: Statistics
-
-## Distributions
-## Statistical Models
-## Methods for Estimation
-## Methods for Hypothesis Testing
-
-# Part 2 - Brainstorm: Technologies in Biology
-
-## Microarray
-## ...
-
-## In-class exercise 1 (15 minutes)
-
-### Technologies: 
-
-```{r}
-techs <- c("microarray", "rna-seq", "dna-seq", 
-           "bisulphite-seq", "cytometry", "mass-spec", 
-           "10x-chromium", "oxford-nanopore")
-
-s <- sample(length(techs))
-data.frame(row=s, techs)
-```
-
-### Task: 
-#### produce a 2-3 point summary of "how it works"
-#### links to a few (<5) good resources
-#### create a markdown file for it and upload to README.me in "group assignment" repo
-
-# Part 3 - Brainstorm: Applications in genomics 
-
-# Part 4 - Brainstorm: Linking Technologies to Applications to Statistics
-
-## e.g., microarray -> gene expression -> normally distributed (log intensities)
-
-# Part 5 - Brainstorm: Methods/algorithms in genomics associated to Computer Science
-
-# Part 6 - Pick a "technology" (from above, from [1] or otherwise) to briefly describe
-
 ## Exercise 2 (in groups of 1-3): 
 ### Goal: 
 #### write ~2 sentences about what the method does
@@ -48,5 +7,16 @@ data.frame(row=s, techs)
 
 [1] [https://liorpachter.wordpress.com/seq/](https://liorpachter.wordpress.com/seq/)
 
+## Dup-Seq
+Schmitt, Michael W., Scott R. Kennedy, Jesse J. Salk, Edward J. Fox, Joseph B. Hiatt, and Lawrence A. Loeb. “Detection of Ultra-rare Mutations by Next-generation Sequencing.” Proceedings of the National Academy of Sciences 109, no. 36 (September 4, 2012): 14508–14513. doi:10.1073/pnas.1208715109.
+
+Next-generation DNA sequencing has an error rate of approx. 1% which results in many mistakes. The error rate has to be much lower to detect ultra-rare mutations. The authors propose to sequence both strands of a DNA duplex (Duplex Sequencing). True mutations are found on both strands which decreases the error rate drastically. 
+ 
+**Technology**: next-generation DNA sequencing
+**Application**: Detection of ultra-rare mutations, i.e. lower the error rate by sequencing both strands
+**Statistics**: none (simple error rate calculation)
+
+Written by:
+* Claude, github username crbasel
 
 
